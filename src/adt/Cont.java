@@ -1,4 +1,9 @@
 package adt;
 
-public interface Cont {
+public interface Cont<E> {
+    void add(E item);
+
+    E remove();
+
+    E getData(int index);
 }
